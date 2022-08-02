@@ -1,0 +1,63 @@
+server:
+  port: 8096
+com:
+  value:
+    name: punjab
+    address: pb
+    list:
+    - amritsar
+    - bathinda
+    - patiala
+    - ludhiana
+    - jalnadher
+    map:
+     punjab:
+     - amritsar
+     - jandher
+     - ludhiana
+     bihar:
+     - siwan
+     - mujaffarpur
+     - patna
+     mp:
+     - jabalpur
+     - shivpur
+    location:
+     India:
+      Punjab:
+       Amritsar:
+       - ajnal
+       - majitha
+       - ramdas
+       jalandher:
+       - nakodar
+       - kartarpur
+       - sabanpur
+      haryana:
+       hisar:
+       - adampur
+       - barwala
+       karnal:
+       - dig
+       - indri
+     pakistan:
+      lahor:
+       kasur:
+       - nazampura
+       - athilpur
+       sheikhupura:
+       - mirjavirkaan
+       - kharianwala
+    set:
+    - milk
+    - sugar
+    - rice
+    - sugarCane
+    - mango 
+       
+     
+
+    
+       
+    
+      
