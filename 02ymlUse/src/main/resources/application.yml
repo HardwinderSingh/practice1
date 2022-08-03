@@ -1,0 +1,8 @@
+server:
+  port: 8097
+key:
+  value:
+    map:
+      success: Sussefully done work
+      error: Check sometthing Wrong 
+      fail: Fail to do operation
