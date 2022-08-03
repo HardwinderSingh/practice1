@@ -19,6 +19,7 @@ public class client implements CommandLineRunner{
 		Map<String, String> map = appconfigProps.getMap();
 		
 		
+		System.out.println("printing "); 
 		System.out.println(map.get(FinalValue.SUCCESS)); 
 		System.out.println(""+map.get(FinalValue.ERROR));
 		System.out.println(""+map.get(FinalValue.FAIL));
