@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import com.hsd.props.AppconfigProps;
@@ -12,6 +13,7 @@ import com.hsd.props.FinalValue;
 public class client implements CommandLineRunner{
 	
 	@Autowired
+	@Order(1)
 	private AppconfigProps appconfigProps;
 
 	@Override
