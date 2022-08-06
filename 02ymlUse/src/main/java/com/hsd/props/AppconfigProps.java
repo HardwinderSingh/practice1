@@ -1,6 +1,7 @@
 package com.hsd.props;
 
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -14,5 +15,5 @@ import lombok.Data;
 @ConfigurationProperties(prefix = "key.value")
 public class AppconfigProps { 
 	Map<String, String> map=new HashMap<String,String>();
-
+List<String> custromerlist;
 }

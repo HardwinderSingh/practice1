@@ -6,3 +6,10 @@ key:
       success: Sussefully done work
       error: Check sometthing Wrong 
       fail: Fail to do operation
+    custromerlist:
+    - kamal
+    - raman
+    - dharuv
+    - madhup
+    - rishab
+    
