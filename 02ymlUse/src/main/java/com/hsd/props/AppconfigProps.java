@@ -14,6 +14,7 @@ import lombok.Data;
 @EnableAutoConfiguration
 @ConfigurationProperties(prefix = "key.value")
 public class AppconfigProps { 
+	
 	Map<String, String> map=new HashMap<String,String>();
-List<String> custromerlist;
+	List<String> custromerlist;
 }
