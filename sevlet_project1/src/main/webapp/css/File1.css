@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+.companyhome_div {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+.grid{
+	background-color:#ffcecf ;
+}
+.alignLogo{
+	border-radius:25px;
+	padding-left:10px;
+	width: 100px;
+	height: 100px;
+}
+.company_title {
+	
+	color: red;
+	font-family: cursive;
+	margin-left: 22%;
+	margin-right: auto;
+}
+.logo_div{
+	width: 19.5%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.title_div {
+	
+	width:60%;
+	background-color:#fda2db ;
+	display: inline-block;
+}
+
+.home_text {
+	align-content: center;
+}
+
+.title {
+	color: red;
+	font-size: 40px;
+	
+	margin-bottom: 1px;
+	
+}
+
+.title2 {
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	margin-top: 5px;
+	color: #ff0000;
+	font-size: 25px;
+	margin-bottom: 1px;
+}
+
+.paragraph {
+	font-family: cursive;
+}
+
+.button {
+	background-color: red;
+	border-bottom-style: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: yellow;
+	border-radius: 10px;
+}
+
+.button:hover {
+	color: red;
+	background-color: yellow;
+	cursor: pointer;
+}
+
+.button:active {
+	box-shadow: 10px 10px 8px white;
+	cursor: progress;
+}
+
+body {
+	background-color: #d3d3d3;
+	color: red;
+}
+
+input {
+	background-color: yellow;
+	cursor: text;
+}
+
+select {
+	background-color: yellow;
+}
+
+h1 {
+	color: white;
+	cursor: default;
+	-webkit-text-stroke-width: 1px;
+	 -webkit-text-stroke-color : #ff0080;
+}
+
+table {
+	border: 1px solid;
+	border-color: yellow;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 5px;
+}
+
+.fotter {
+	display: inline;
+	margin-left: 60%;
+}
+
+.fotter_div {
+	background-color: #ffcecf;
+}
+
+h4 {
+	color: #b30000;
+}
