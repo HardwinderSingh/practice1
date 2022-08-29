@@ -1,0 +1,8 @@
+@charset "UTF-8";
+input[type="submit"]{
+	opacity: 0.1;
+	transition:.3s;
+}
+input[type="submit"]:focus,input[type="submit"]:hover {
+	opacity: 1;
+}

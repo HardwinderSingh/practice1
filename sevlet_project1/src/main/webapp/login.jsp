@@ -9,9 +9,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+
 <title>LOG IN</title>
-<style><%@include file="/css/File1.css"%></style>
-<!-- <link rel="stylesheet" href="/css/File1.css" type="text/css"> -->
+<style><%@include file="/css/File1.css"%>
+<%@include file="/css/login.css"%>
+</style>
+<link rel="stylesheet" href="/css/File1.css" type="text/css">
 <script type="text/javascript">
 	function getOtp() {
 		var mobile = document.getElementById("mobile").value;
@@ -79,7 +82,7 @@
 				<td><input type="text" name="C_MOBILE" id="mobile"
 					onblur="getOtp();" required="required"></td>
 				<td><input type="text" id="otp" name="C_OTP"
-					required="required"></td>
+					required="required" placeholder="otp" class="otp"></td>
 			</tr>
 
 			<tr>

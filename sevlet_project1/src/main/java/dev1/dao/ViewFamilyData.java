@@ -17,7 +17,7 @@ public Map<ParentsDto,List<ChildrenDto>> getFatherData() {
 	Map<ParentsDto,List<ChildrenDto>> family=new HashMap<>();
 	Connection	con =ConnectionClass.connection();
  	try {
- 		PreparedStatement ps = con.prepareStatement("select f.fid, f.name,f.gndr,f.dob,s.state_name,d.district_name from f_mst1 as f inner join mst_state as s on f.stcode :: int=s.state_code inner join mst_district as d on f.distcode=d.district_code");
+ 		PreparedStatement ps = con.prepareStatement("select f.fid, f.name,f.gndr,f.dob,s.state_name,d.district_name from f_mst1 as f inner join mst_state as s on f.stcode :: int=s.state_code inner join mst_district as d on f.distcode=d.district_code ");
  		ResultSet rs = ps.executeQuery();
  		while(rs.next()) {
  			ParentsDto pdto=new ParentsDto();

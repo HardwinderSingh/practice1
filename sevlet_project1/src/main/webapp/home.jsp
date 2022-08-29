@@ -37,7 +37,8 @@
 							value="Create new account" class="button"></a></td>
 					<td><a href="viewData.jsp"><input type="button"
 							value="VIEW DATA" class="button"></a></td>
-
+						<td><a href="viewDataWithBootStrap.jsp"><input type="button"
+							value="Boot Strap" class="button"></a></td>
 				</tr>
 				<tr>
 
