@@ -1,0 +1,28 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from RequestHandlerService WSDL service -->
+
+  <service name="RequestHandler" provider="java:RPC" style="document" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://service.code"/>
+      <parameter name="wsdlServiceElement" value="RequestHandlerService"/>
+      <parameter name="schemaQualified" value="http://service.code"/>
+      <parameter name="wsdlServicePort" value="RequestHandler"/>
+      <parameter name="className" value="code.service.RequestHandlerSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="RequestHandler"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="getStateXml" qname="getStateXml" returnQName="retNS:getStateXmlReturn" xmlns:retNS="http://service.code" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <parameter name="allowedMethods" value="getStateXml"/>
+
+  </service>
+</deployment>

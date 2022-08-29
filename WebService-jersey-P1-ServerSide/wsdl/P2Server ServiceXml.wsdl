@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://Service.code" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://Service.code" xmlns:intf="http://Service.code" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://Service.code" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="id" type="xsd:string"/>
+   <element name="getStatebyIdinXmlReturn" type="xsd:string"/>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="getStatebyIdinXmlRequest">
+
+      <wsdl:part element="impl:id" name="id">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="getStatebyIdinXmlResponse">
+
+      <wsdl:part element="impl:getStatebyIdinXmlReturn" name="getStatebyIdinXmlReturn">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="ServiceXml">
+
+      <wsdl:operation name="getStatebyIdinXml" parameterOrder="id">
+
+         <wsdl:input message="impl:getStatebyIdinXmlRequest" name="getStatebyIdinXmlRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:getStatebyIdinXmlResponse" name="getStatebyIdinXmlResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ServiceXmlSoapBinding" type="impl:ServiceXml">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="getStatebyIdinXml">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="getStatebyIdinXmlRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="getStatebyIdinXmlResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ServiceXmlService">
+
+      <wsdl:port binding="impl:ServiceXmlSoapBinding" name="ServiceXml">
+
+         <wsdlsoap:address location="http://localhost:7080/WebserviceP2ServerSide/services/ServiceXml"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
